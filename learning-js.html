@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Learning JavaScript</title>
+    <link rel="stylesheet" href="mystyles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <a href="index.html">Home</a>
+            <a href="learning-js.html">Learning JS</a> 
+        </ul>
+    </nav>
+    <div class="header">
+    <header>
+        <h1>Nik Sokol</h1>
+    </header>
+    </div>
+    <main>
+        <h2>Learning JavaScript</h2>
+        <hr>
+        <div id="find-array-methods">
+            <h3>Finding with find() and findIndex():</h3>
+        <pre><code>
+            let favoriteAnimals = ["cat", "dog", "pig", "horse", "yak", "sea lion"];
+
+            let moreThanFourLetterAnimal = favoriteAnimals.find(animal => animal[4]); 
+            console.log(moreThanFourLetterAnimal); //OUTPUT: horse
+            
+            let locationAnimal = favoriteAnimals.findIndex(animal => animal[4]);
+            console.log(locationAnimal); //OUTPUT: 3
+
+            //The code within the parenthesis is a callback function (animal => animal[4]) 
+        </code></pre>
+        <p><em>Let's break this down:</em></p>
+            <p> 1. Create an array called 'favoriteAnimals' to hold a list of favorite animals.<br>  
+                2. Declare a new variable 'moreThanFourLetterAnimal' to use .find(animal => animal[4]).<br>
+                3. Log 'moreThanFourLetterAnimal' to the console. This returns 'horse' because it is the first word more than 4 letters.<br>
+                4. Declare a new variable 'locationAnimal' to uses .findIndex(animal => animal[4]).<br>
+                5. Log 'locationAnimal' to the console. This returns the index value: 3 for the word 'horse' because of zero-indexing.
+            </p>
+            <p><strong>Notes: </strong><br>
+                <b>Zero-Indexing</b><br>
+                In this example, that means while there are 6 words total, the index values (position) starts at 0, as follows:<br>
+                "cat" = 0, "dog" = 1, "pig" = 2, "horse" = 3, "yak" = 4, "sea lion" = 5<br>
+                <br>
+                <b>Logic behind .find()</b><br>
+                The callback function uses the parameter 'animal' to keep track of the element being passed over, and [4] checks for a 5th character.<br><br>
+                <b>Logic behind .findIndex()</b><br>
+                The callback function uses the parameter 'animal' to keep track of the element being passed over, and [4] checks for the index value of 'horse'. <br> <br>
+                <b>Definitions of find() and findIndex()</b><br>
+                .find() returns the first element that satifies a condition. Otherwise it returns undefined. <br>
+                .findIndex() returns the index of the first element that satifies a condition. Otherwise it returns -1. <br> 
+            </p>
+        </div>
+        <hr>
+        <div class="forLoop">
+        <h3>Using a for Loop:</h3>
+        <pre><code>
+            for (let i = 0; i < 3; i++) {
+                console.log("Iteration: ", i);
+            }
+        </code></pre>
+        <p><em>Let's break this down:</em></p>
+        <p>
+            <b>First</b>, let's look at the expression 'let i = 0': <br> 
+            This is called the initial expression, indicating what value we will start looping at and keep track of each cycle.<br>
+            <br>
+            <b>Second</b>, take a look at the condition 'i < 3': <br>
+            This is called the loop condition, meaning as long as i < 3, the loop will continue running. <br>
+            <br>
+            <b>Third</b>, let's look at the expression 'i++': <br>
+            This is called the update expression, which is the code that is being executed each cycle.</p>
+        <p><b>Remember: </b><br> 
+            1. The loop condition is executed <b>BEFORE</b> each loop iteration<br>
+            2. The update expression is executed at the <b>END</b> of each loop iteration<br>
+        </p>
+        <p><b>Think about the logic like this: 
+            i = 0 therefore 0 < 3 and the condition is met </b><br>
+            <br>
+            Loop 1 prints iteration: 0 because (0 < 3) condition MET; continue looping <br>
+            Loop 2 prints iteration: 1 because (1 < 3) condition MET; continue looping <br>
+            Loop 3 prints iteration: 2 because (2 < 3) condition MET; continue looping <br>
+            Loop 4 prints iteration: 3 because (3 < 3) condition MET; continue looping <br>
+            Loop 5 prints iteration: 4 because (4 < 3) condition NOT MET; END LOOP <br>
+        </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 by Nik Sokol | All rights reserved.</p>
+    </footer>
+</body>
+</html>
