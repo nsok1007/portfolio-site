@@ -24,3 +24,7 @@ This is an experimental web development and design project.
 
 ## Let's Connect!
 Feel free to contact me at the following: [LinkedIn](https://www.linkedin.com/in/sokol1007/details/projects/) | [GitHub](https://github.com/nsok1007)
+
+## License
+This project is not open source. All rights reserved.  
+Code, design, and content may not be used, reproduced, or distributed without permission.
