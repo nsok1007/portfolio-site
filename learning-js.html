@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Learning JavaScript</title>
     <link rel="stylesheet" href="mystyles.css">
+    <link rel="icon" type=""image/x-icon" href="favicon.ico"> <!--favicon.cc-->
 </head>
 
 <body>
@@ -22,6 +23,7 @@
         <ul class="menu">
             <a href="index.html">Home</a>
             <a href="learning-js.html">Learning JS</a> 
+            <!--<a href="about.html" target="_blank">About</a>-->
         </ul>
     </nav>
     <div class="header">
@@ -31,6 +33,39 @@
     </div>
     <main>
         <h2>Learning JavaScript</h2>
+        <div id="multidimensional-arrays">
+            <h3>HTML Tables v. 2D Arrays:</h3><br>
+            <table style="width:auto">
+                <caption>Contact List</caption>
+                <tr> <!--Rows-->
+                    <th>Name</th> <!--Columns-->
+                    <th>Email</th>
+                    <th>Zip Code</th>
+                </tr>
+                <tr>
+                    <td>Coley</td> <!--Cells-->
+                    <td>KP</td>
+                    <td>Junghyung</td>
+                </tr>
+                <tr style="width:auto">
+                    <td>glg15@email.com</td>
+                    <td>talia1950@email.com</td>
+                    <td>winterbear1997@gcf.com</td>
+                </tr>
+                <tr>
+                    <td>08215</td>
+                    <td>06218</td>
+                    <td>09129</td>
+                </tr>
+            </table> <br>
+            <pre><code>
+                let contactList = [
+                    ["Coley", "glg15@email.com", "08215"],
+                    ["KP", "talia1950@email.com", "06218"],
+                    ["Junghyung, "winterbear1997@gcf.com, "09129"]
+                ]
+            </code></pre>
+        </div>
         <hr>
         <div id="find-array-methods">
             <h3>Finding with find() and findIndex():</h3>
@@ -46,11 +81,14 @@
             //The code within the parenthesis is a callback function (animal => animal[4]) 
         </code></pre>
         <p><em>Let's break this down:</em></p>
-            <p> 1. Create an array called 'favoriteAnimals' to hold a list of favorite animals.<br>  
-                2. Declare a new variable 'moreThanFourLetterAnimal' to use .find(animal => animal[4]).<br>
-                3. Log 'moreThanFourLetterAnimal' to the console. This returns 'horse' because it is the first word more than 4 letters.<br>
-                4. Declare a new variable 'locationAnimal' to uses .findIndex(animal => animal[4]).<br>
-                5. Log 'locationAnimal' to the console. This returns the index value: 3 for the word 'horse' because of zero-indexing.
+            <p style="color:#909095"> 
+                <ol style="color:#909095">
+                    <li>Create an array called 'favoriteAnimals' to hold a list of favorite animals.</li><br>
+                    <li>Declare a new variable 'moreThanFourLetterAnimal' to use .find(animal => animal[4]).</li><br>
+                    <li>Log 'moreThanFourLetterAnimal' to the console. This returns 'horse' because it is the first word more than 4 letters.</li><br>
+                    <li>Declare a new variable 'locationAnimal' to uses .findIndex(animal => animal[4]).</li><br>
+                    <li>Log 'locationAnimal' to the console. This returns the index value: 3 for the word 'horse' because of zero-indexing.</li><br>
+                </ol>
             </p>
             <p><strong>Notes: </strong><br>
                 <b>Zero-Indexing</b><br>
@@ -84,9 +122,11 @@
             <br>
             <b>Third</b>, let's look at the expression 'i++': <br>
             This is called the update expression, which is the code that is being executed each cycle.</p>
-        <p><b>Remember: </b><br> 
-            1. The loop condition is executed <b>BEFORE</b> each loop iteration<br>
-            2. The update expression is executed at the <b>END</b> of each loop iteration<br>
+        <p style="color:#909095"><b>Remember: </b>
+            <ol style="color:#909095">
+                <li>The loop condition is executed <b>BEFORE</b> each loop iteration</li><br>
+                <li>The update expression is executed at the <b>END</b> of each loop iteration</li><br>
+            </ol>
         </p>
         <p><b>Think about the logic like this: 
             i = 0 therefore 0 < 3 and the condition is met </b><br>

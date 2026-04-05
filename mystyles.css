@@ -11,6 +11,17 @@
 :root {
   background-color: #23232c;
 }
+
+a:link, a:visited{
+color:#909095;
+text-decoration: none;
+}
+
+a:hover, a:active{/* why won't this work? It reverts to grey*/
+color:#f8f5f4;
+text-decoration: none;
+}
+
 .header {
   margin: 0;
   padding: 1px;
@@ -59,6 +70,24 @@ ul { /* nav bar links in header */
 code {
   display:block;
   background-color: aliceblue;
+}
+
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+th, td{
+  background-color:plum;
+  border-color:blueviolet; /*this overrides the border solid black*/
+}
+
+caption{
+  color:#909095;
 }
 footer { /*footer won't load as a footer */
   margin: 0;
