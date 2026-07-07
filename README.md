@@ -14,6 +14,8 @@ This is an experimental web development and design project.
 - <a href="/index.html">index.html</a> – main landing page (Home)
 - <a href="/learning-js.html">learning-js.html</a> – feed page of JS example walkthroughs I want to remember
 - <a href="/mystyles.css">mystyles.css</a> – style sheet for global and element-specific design
+- <a href="/about.html">about.html</a> – about page w/ contact form
+- <a href="resume.html">resume.html</a> – to be filled out -- hard-coded or pdf viewer
 
 ## Technologies Used
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
